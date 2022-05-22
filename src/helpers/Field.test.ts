@@ -55,16 +55,16 @@ describe("Field Generator Tests", () => {
     });
 
     it("Field Generator with bombs with 50% Bombs", () => {
-      const field = fieldGenerator(4, 0.5);
+      const field = fieldGenerator(2, 0.5);
       const flatField = field.flat();
 
       const cellWithBombs = flatField.filter((cell) => cell === bomb);
-      const safeCells = flatField.filter((cell) => cell === empty);
+      const safeCells = flatField.filter((cell) => cell === 2);
       console.table(field);
       console.table(flatField);
 
-      expect(cellWithBombs).toHaveLength(8);
-      expect(safeCells).toHaveLength(8);
+      expect(cellWithBombs).toHaveLength(2);
+      expect(safeCells).toHaveLength(2);
     });
   });
 });
