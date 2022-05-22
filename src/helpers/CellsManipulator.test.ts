@@ -38,7 +38,6 @@ describe("CellsManipulator Test Cases", () => {
   });
 
   test("Increment Neighbor with 1 Bomb at center", () => {
-
     expect(
       incrementNeighbors(
         [1, 1],

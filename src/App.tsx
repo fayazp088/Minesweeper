@@ -1,20 +1,18 @@
-import React, { FC } from "react";
+import React from "react";
 import "./App.css";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <Header>Hello</Header>
+      <Header
+        name="MineSweeper"
+        feature="Flag"
+        firstAction="Ctrl"
+        secondAction="Alt"
+      />
     </div>
   );
 }
-
-interface BaseLayoutProps {
-  children?: React.ReactNode;
-}
-
-const Header: FC<BaseLayoutProps> = ({ children }) => {
-  return <div>{children}</div>;
-};
 
 export default App;
