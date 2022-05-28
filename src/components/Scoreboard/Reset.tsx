@@ -5,7 +5,7 @@ export interface ResetProps {
   onReset: () => void;
 }
 
-export const Reset: FC<ResetProps> = ({ onReset }) => {
+const Reset: FC<ResetProps> = ({ onReset }) => {
   const [click, setClick] = useState(false);
 
   const onMouseDown = () => setClick(true);

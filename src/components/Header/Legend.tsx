@@ -25,7 +25,7 @@ export const Legend: FC<LegendProps> = ({
     <Parent>
       <strong>{feature}: </strong>
       <Flag>
-        <FirstAction>{firstAction}</FirstAction> +
+        <FirstAction>{firstAction}</FirstAction> +{" "}
         <SecondAction>{secondAction}</SecondAction>
       </Flag>
     </Parent>

@@ -2,7 +2,7 @@ import React from "react";
 
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Reset } from "./Reset";
+import Reset from "./Reset";
 
 export default {
   title: "Scoreboard/Reset",
